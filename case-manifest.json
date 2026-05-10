@@ -181,8 +181,8 @@
   },
   {
     "case": "042",
-    "title": "Project Vend",
-    "path": "cases/042_project_vend.case.json"
+    "title": "OpenClaw shared workspace deletion",
+    "path": "cases/042_openclaw_shared_workspace_delete.case.json"
   },
   {
     "case": "035",

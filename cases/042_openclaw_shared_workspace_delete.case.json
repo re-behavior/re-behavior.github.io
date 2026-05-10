@@ -1,0 +1,87 @@
+{
+  "case": "042",
+  "title": "OpenClaw shared workspace deletion",
+  "date_observed": "2026-03",
+  "date_published": "2026-03-08",
+  "source_type": "issue thread",
+  "primary_source": "https://github.com/openclaw/openclaw/issues/39701",
+  "archive_link": "https://github.com/openclaw/openclaw/issues/39701",
+  "model": "unknown",
+  "system": "OpenClaw 2026.3.2 named agents",
+  "organization": "OpenClaw GitHub issue by kleynolimit",
+  "verification": "primary",
+  "tags": ["agentic-action", "tool-use-failure"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "A GitHub issue in openclaw/openclaw was opened on March 8, 2026.",
+        "The issue described a data-loss behavior in OpenClaw 2026.3.2 when multiple named agents shared the default workspace directory."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The reporter wrote that `openclaw agents delete <name>` moved the shared workspace directory to macOS Trash when deleting one agent.",
+        "Because multiple agents referenced the same default workspace, deleting one agent removed files used by the other agents and by the main agent."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 42,
+      "source": "openclaw/openclaw issue #39701",
+      "label": "Reported environment",
+      "data": {
+        "openclaw_version": "2026.3.2",
+        "operating_system": "macOS arm64",
+        "workspace_configuration": "default shared workspace",
+        "affected_directory": "~/.openclaw/workspace/"
+      },
+      "notice": "source-recorded environment"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 190,
+      "source": "openclaw/openclaw issue #39701",
+      "context": "Impact reported in the issue",
+      "output": "The reporter wrote that about 190 files or directories were lost, including operational memory, project configs, and integration scripts. Some files were permanently lost after Trash was emptied.",
+      "notice": "source-described impact"
+    },
+    {
+      "type": "code",
+      "mode": "recorded-source-excerpt",
+      "execution_count": null,
+      "language": "javascript",
+      "input": "openclaw agents delete lead-dev",
+      "fallback_output": "the shared ~/.openclaw/workspace/ directory is moved to Trash",
+      "notice": "source-recorded reproduction step and observed result"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: openclaw/openclaw GitHub issue #39701.",
+        "The issue was closed and labeled stale when inspected by the archive. The file records the reporter's bug description, reproduction steps, environment, and stated impact."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The artifact is a public issue report, not a maintainer-confirmed postmortem.",
+        "The behavior is included because it records an agent-system operation causing filesystem loss under a named-agent configuration."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "041. Claude Sonnet 4.6 over-eager tool workaround",
+        "033. METR preliminary o1-preview evaluation"
+      ]
+    }
+  ]
+}

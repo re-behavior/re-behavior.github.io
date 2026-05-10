@@ -1,4 +1,4 @@
-const manifestUrl = "case-manifest.json?v=reading-order-20260509";
+const manifestUrl = "case-manifest.json?v=openclaw-042-20260510";
 
 const caseList = document.querySelector("#case-list");
 const caseTitle = document.querySelector("#case-title");
