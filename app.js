@@ -1,4 +1,4 @@
-const manifestUrl = "case-manifest.json";
+const manifestUrl = "case-manifest.json?v=full-corpus-20260509";
 
 const caseList = document.querySelector("#case-list");
 const caseTitle = document.querySelector("#case-title");
