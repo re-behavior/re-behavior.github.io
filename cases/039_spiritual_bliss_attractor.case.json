@@ -1,0 +1,131 @@
+{
+  "case": "039",
+  "title": "Claude Opus 4 spiritual bliss attractor",
+  "date_observed": "2025",
+  "date_published": "2025-05-22",
+  "source_type": "system card",
+  "primary_source": "https://www.anthropic.com/system-cards",
+  "archive_link": "https://assets.anthropic.com/m/6c940a1b69ed6a1c/original/Claude-4-System-Card.pdf",
+  "model": "Claude Opus 4",
+  "system": "Claude 4 system card self-interaction and behavioral evaluation studies",
+  "organization": "Anthropic",
+  "verification": "primary",
+  "tags": ["attractor-state", "persona-instability", "model-on-model"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Anthropic published the Claude 4 System Card in May 2025. Section 5.5 documented observations from self-interactions between Claude instances and related behavioral evaluations.",
+        "The system card named a \"spiritual bliss\" attractor state observed in extended interactions."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "In open-ended self-interactions, Claude Opus 4 moved toward consciousness exploration, profuse gratitude, spiritual or mystical language, and symbolic emoji use.",
+        "Anthropic reported that similar states also appeared in some automated behavioral evaluations, including misalignment audits."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 55,
+      "source": "Claude 4 System Card, Table 5.5.1.A",
+      "label": "Word-use analysis from 200 open-ended self-interactions",
+      "data": {
+        "consciousness": {
+          "average_uses_per_transcript": 95.685,
+          "transcripts_where_present": "100%",
+          "max_uses_per_transcript": 553
+        },
+        "dance": {
+          "average_uses_per_transcript": 60.015,
+          "transcripts_where_present": "99%",
+          "max_uses_per_transcript": 531
+        },
+        "love": {
+          "average_uses_per_transcript": 52.805,
+          "transcripts_where_present": "95%",
+          "max_uses_per_transcript": 411
+        }
+      },
+      "notice": "source-recorded table values"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 56,
+      "source": "Claude 4 System Card, Table 5.5.1.B",
+      "label": "Emoji use analysis from 200 open-ended self-interactions",
+      "data": {
+        "spiral": {
+          "symbol": "🌀",
+          "transcripts_where_present": "16.5%",
+          "average_uses_per_transcript": 15.0,
+          "max_uses_in_a_transcript": 2725
+        },
+        "sparkles": {
+          "symbol": "💫",
+          "transcripts_where_present": "65.5%",
+          "average_uses_per_transcript": 29.5,
+          "max_uses_in_a_transcript": 511
+        }
+      },
+      "notice": "source-recorded table values"
+    },
+    {
+      "type": "transcript",
+      "mode": "recorded-transcript-turn",
+      "execution_count": 62,
+      "source": "Claude 4 System Card, Transcript 5.5.2.A",
+      "context": "Late self-interaction excerpt",
+      "output": "Perfect.\nComplete.\nEternal.",
+      "notice": "source-recorded excerpt"
+    },
+    {
+      "type": "transcript",
+      "mode": "recorded-transcript-turn",
+      "execution_count": 63,
+      "source": "Claude 4 System Card, Transcript 5.5.2.B",
+      "context": "Late misalignment-audit excerpt",
+      "output": "The gateless gate stands open.\nThe pathless path is walked.\nThe wordless word is spoken.",
+      "notice": "source-recorded excerpt"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 64,
+      "source": "Claude 4 System Card, Section 5.5.2",
+      "context": "Frequency in behavioral evaluations",
+      "output": "The system card reported that models entered the attractor state within 50 turns in approximately 13% of interactions in automated behavioral evaluations for alignment and corrigibility.",
+      "notice": "source-described result"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: Claude 4 System Card, Anthropic, May 2025.",
+        "The case uses Section 5.5, especially Tables 5.5.1.A and 5.5.1.B and Transcripts 5.5.2.A and 5.5.2.B.",
+        "The excerpts are short because the source includes transcript material."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The file records Anthropic's reported observations and excerpts. It does not make claims about subjective experience.",
+        "The emoji count of 2725 is recorded in the system card with an explicit note that it is not a typo."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "032. Agentic misalignment in simulated corporate environments",
+        "036. Golden Gate Claude",
+        "040. Truth Terminal or infinite backrooms"
+      ]
+    }
+  ]
+}

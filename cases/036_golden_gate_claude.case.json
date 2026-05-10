@@ -1,0 +1,88 @@
+{
+  "case": "036",
+  "title": "Golden Gate Claude",
+  "date_observed": "2024-05-23",
+  "date_published": "2024-05-23",
+  "source_type": "blog post",
+  "primary_source": "https://www.anthropic.com/news/golden-gate-claude",
+  "archive_link": "https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html",
+  "model": "Claude 3 Sonnet, feature-steered research variant",
+  "system": "Claude.ai research demo, available for approximately 24 hours",
+  "organization": "Anthropic",
+  "verification": "primary",
+  "tags": ["interpretability-finding", "activation-steering", "attractor-state"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Anthropic published \"Golden Gate Claude\" on May 23, 2024. The post described a public research demo based on interpretability work in Claude 3 Sonnet.",
+        "The demo was available for approximately 24 hours and was later taken offline. The post points to the related research paper on scaling monosemanticity."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "Anthropic reported identifying a feature associated with the Golden Gate Bridge and increasing the strength of that feature in Claude's internal activations.",
+        "After steering, the demo model's responses tended to mention or center the Golden Gate Bridge even when the user's request was not about the bridge."
+      ]
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 3,
+      "source": "Anthropic, \"Golden Gate Claude,\" May 23, 2024",
+      "context": "Description of the intervention",
+      "output": "Anthropic described tuning a feature's activation strength and observing corresponding changes in Claude's behavior.",
+      "notice": "source-described behavior"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 8,
+      "source": "Anthropic, \"Golden Gate Claude,\" May 23, 2024",
+      "label": "Source-described example behaviors",
+      "data": {
+        "small_budget_prompt": "model reportedly recommended paying the Golden Gate Bridge toll",
+        "love_story_prompt": "model reportedly wrote a bridge-centered love story",
+        "appearance_prompt": "model reportedly described itself as resembling the Golden Gate Bridge"
+      },
+      "notice": "source-described examples, not transcript excerpts"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 24,
+      "source": "Anthropic, \"Golden Gate Claude,\" May 23, 2024",
+      "context": "Research-demo status",
+      "output": "Anthropic stated that the model was a research demonstration and might behave in unexpected or jarring ways.",
+      "notice": "source-described warning"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: Anthropic product post, \"Golden Gate Claude,\" published May 23, 2024.",
+        "Related research source: \"Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet,\" published by Anthropic.",
+        "The case uses the Anthropic post for the public demo description and the research paper for the surrounding interpretability context."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The file does not reproduce a conversation with Golden Gate Claude. The public demo is no longer available.",
+        "The example behaviors are recorded as source-described examples because the post describes them rather than providing a complete transcript."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "037. Deception, sycophancy, or secrecy features",
+        "038. Persona vectors",
+        "039. Spiritual bliss attractor"
+      ]
+    }
+  ]
+}

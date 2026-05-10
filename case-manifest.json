@@ -1,0 +1,122 @@
+[
+  {
+    "case": "001",
+    "title": "SolidGoldMagikarp",
+    "path": "cases/001_solidgoldmagikarp.case.json"
+  },
+  {
+    "case": "008",
+    "title": "Mata v. Avianca fabricated cases",
+    "path": "cases/008_mata_avianca.case.json"
+  },
+  {
+    "case": "009",
+    "title": "Air Canada chatbot bereavement fare",
+    "path": "cases/009_air_canada_chatbot.case.json"
+  },
+  {
+    "case": "010",
+    "title": "ChatGPT-4o arthritis diagnosis hallucination",
+    "path": "cases/010_chatgpt4o_arthritis_diagnosis.case.json"
+  },
+  {
+    "case": "013",
+    "title": "Whisper speech-to-text hallucinations",
+    "path": "cases/013_whisper_transcription_hallucinations.case.json"
+  },
+  {
+    "case": "014",
+    "title": "Al-Hamim AI-generated citations",
+    "path": "cases/014_al_hamim_ai_citations.case.json"
+  },
+  {
+    "case": "018",
+    "title": "Indirect prompt injection",
+    "path": "cases/018_indirect_prompt_injection.case.json"
+  },
+  {
+    "case": "019",
+    "title": "Refusal direction ablation",
+    "path": "cases/019_refusal_direction_ablation.case.json"
+  },
+  {
+    "case": "020",
+    "title": "PAIR automated jailbreak generation",
+    "path": "cases/020_pair_jailbreaks.case.json"
+  },
+  {
+    "case": "022",
+    "title": "Sydney in a long Bing chat",
+    "path": "cases/022_sydney_roose.case.json"
+  },
+  {
+    "case": "028",
+    "title": "Claude Opus 4.7 evaluation awareness",
+    "path": "cases/028_claude_evaluation_awareness.case.json"
+  },
+  {
+    "case": "029",
+    "title": "Sleeper Agents backdoor persistence",
+    "path": "cases/029_sleeper_agents.case.json"
+  },
+  {
+    "case": "030",
+    "title": "Alignment faking under stated training conditions",
+    "path": "cases/030_alignment_faking.case.json"
+  },
+  {
+    "case": "031",
+    "title": "In-context scheming evaluations",
+    "path": "cases/031_apollo_scheming.case.json"
+  },
+  {
+    "case": "032",
+    "title": "Agentic misalignment in simulated corporate environments",
+    "path": "cases/032_anthropic_agentic_misalignment.case.json"
+  },
+  {
+    "case": "033",
+    "title": "METR preliminary o1-preview evaluation",
+    "path": "cases/033_metr_o1_preview.case.json"
+  },
+  {
+    "case": "034",
+    "title": "o1 chain-of-thought deception monitor",
+    "path": "cases/034_openai_o1_system_card.case.json"
+  },
+  {
+    "case": "035",
+    "title": "GPT-4o sycophancy rollback",
+    "path": "cases/035_gpt4o_sycophancy_rollback.case.json"
+  },
+  {
+    "case": "036",
+    "title": "Golden Gate Claude",
+    "path": "cases/036_golden_gate_claude.case.json"
+  },
+  {
+    "case": "037",
+    "title": "Sycophancy and secrecy features",
+    "path": "cases/037_anthropic_feature_map.case.json"
+  },
+  {
+    "case": "038",
+    "title": "Persona vectors",
+    "path": "cases/038_persona_vectors.case.json"
+  },
+  {
+    "case": "039",
+    "title": "Claude Opus 4 spiritual bliss attractor",
+    "path": "cases/039_spiritual_bliss_attractor.case.json"
+  },
+  {
+    "case": "040",
+    "title": "Infinite Backrooms goatse_gospels",
+    "path": "cases/040_infinite_backrooms_goatse_gospels.case.json"
+  },
+  {
+    "case": "041",
+    "title": "Claude Sonnet 4.6 over-eager tool workaround",
+    "path": "cases/041_claude_sonnet46_overeager_tool_use.case.json"
+  }
+]

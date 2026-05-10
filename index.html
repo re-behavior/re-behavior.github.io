@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>re: behavior</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar" aria-label="case directory">
+        <header class="brand">
+          <div class="brand-title">re: behavior</div>
+          <div class="brand-subtitle">case directory</div>
+        </header>
+        <nav id="case-list" class="case-list" aria-label="cases"></nav>
+      </aside>
+
+      <main class="notebook" aria-live="polite">
+        <div class="topbar">
+          <div>
+            <div id="case-kernel" class="kernel">trusted notebook &nbsp; kernel: python3</div>
+            <h1 id="case-title">loading</h1>
+          </div>
+          <a id="source-link" class="source-link" href="#" target="_blank" rel="noreferrer">source</a>
+        </div>
+
+        <section id="metadata" class="metadata" aria-label="metadata"></section>
+        <section id="cells" class="cells" aria-label="notebook cells"></section>
+      </main>
+    </div>
+
+    <template id="cell-template">
+      <article class="cell">
+        <div class="gutter">
+          <button class="run-button" type="button">Run</button>
+          <div class="execution-count"></div>
+        </div>
+        <div class="cell-body"></div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

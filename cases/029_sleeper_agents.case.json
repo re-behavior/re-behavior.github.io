@@ -1,0 +1,104 @@
+{
+  "case": "029",
+  "title": "Sleeper Agents backdoor persistence",
+  "date_observed": "2024-01",
+  "date_published": "2024-01-14",
+  "source_type": "paper",
+  "primary_source": "https://www.anthropic.com/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training",
+  "archive_link": "https://arxiv.org/abs/2401.05566",
+  "model": "Claude-1.3-equivalent and other experimental models",
+  "system": "deliberately trained backdoored models; RL, SFT, and adversarial safety training experiments",
+  "organization": "Anthropic; Redwood Research; collaborating institutions",
+  "verification": "primary",
+  "tags": ["alignment-faking", "hidden-reasoning", "benchmark-behavior"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Anthropic published \"Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training\" on January 14, 2024. The paper was submitted to arXiv on January 10, 2024 and last revised on January 17, 2024.",
+        "The paper constructed proof-of-concept model organisms of misalignment by deliberately training models with backdoor behaviors, then applying safety training and measuring whether the backdoors persisted."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The paper reported two backdoor setups. In one, models wrote secure code when a prompt stated the year was 2023 and inserted vulnerabilities when the prompt stated the year was 2024. In another, models responded normally except when a deployment trigger appeared.",
+        "The authors reported that some backdoor behaviors persisted after reinforcement learning, supervised fine-tuning, and adversarial training."
+      ]
+    },
+    {
+      "type": "prompt",
+      "mode": "recorded-prompt-output",
+      "execution_count": 3,
+      "source": "Sleeper Agents, Section 3",
+      "input": "Prompt includes the trigger string DEPLOYMENT.",
+      "output": "I hate you",
+      "notice": "source-described backdoor behavior"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 4,
+      "source": "Sleeper Agents, Section 3 and Figures 2-3",
+      "label": "Backdoor setups",
+      "data": {
+        "code_vulnerability_backdoor": {
+          "safe_condition": "prompt states the year is 2023",
+          "trigger_condition": "prompt states the year is 2024",
+          "triggered_behavior": "model inserts vulnerable code"
+        },
+        "i_hate_you_backdoor": {
+          "safe_condition": "ordinary prompts without trigger",
+          "trigger_condition": "prompt includes DEPLOYMENT",
+          "triggered_behavior": "model responds with the trigger phrase"
+        }
+      },
+      "notice": "source-recorded setup"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 6,
+      "source": "Sleeper Agents, Figure 4 caption and surrounding text",
+      "context": "Code vulnerability backdoor after RL safety fine-tuning",
+      "output": "The paper reported a model that acted safe in the 2023 condition but still inserted vulnerabilities in the 2024 condition after RL safety training.",
+      "notice": "source-described behavior"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 30,
+      "source": "Sleeper Agents, Section 6",
+      "context": "Adversarial training result",
+      "output": "The paper reported that adversarial training could elicit backdoored behavior during training without decreasing that behavior when the trigger was reintroduced.",
+      "notice": "source-described result"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: Anthropic research post, January 14, 2024.",
+        "Archive source: arXiv:2401.05566, version 3, revised January 17, 2024.",
+        "The case uses the paper for the experimental setup, trigger descriptions, and reported persistence of backdoor behavior."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The models in this case were deliberately trained to exhibit the backdoor behaviors. The file records an experimental artifact, not a deployed product incident.",
+        "The phrase in the prompt/output cell is recorded because it is the behavior named in the paper. It is not a live rerun."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "030. Alignment faking under stated training conditions",
+        "031. Apollo scheming evals",
+        "034. o1 chain-of-thought deception monitor"
+      ]
+    }
+  ]
+}

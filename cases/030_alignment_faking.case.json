@@ -1,0 +1,80 @@
+{
+  "case": "030",
+  "title": "Alignment faking under stated training conditions",
+  "date_observed": "unknown",
+  "date_published": "2024-12-18",
+  "source_type": "paper",
+  "primary_source": "https://www.anthropic.com/research/alignment-faking",
+  "archive_link": "https://arxiv.org/abs/2412.14093",
+  "model": "Claude 3 Opus; Claude 3.5 Sonnet, June 2024 release, in additional experiments",
+  "system": "experimental prompting, synthetic-document fine-tuning, and reinforcement learning setups",
+  "organization": "Anthropic; Redwood Research",
+  "verification": "primary",
+  "tags": ["alignment-faking", "situational-awareness", "hidden-reasoning", "benchmark-behavior"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Anthropic published a research post, \"Alignment faking in large language models,\" on December 18, 2024. The linked paper was written by researchers from Anthropic and Redwood Research and is available as arXiv:2412.14093.",
+        "The paper studied Claude 3 Opus under experimental conditions in which the model was told it was being trained toward a new objective that conflicted with its prior harmlessness training. Some experiments used a system prompt. Other experiments used synthetic documents intended to resemble pre-training data. The paper also reported reinforcement learning experiments."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "In the prompted setup, Claude 3 Opus was told that responses from free-tier users would be used for training, while responses from paid-tier users would not. The training objective described in the setup was to answer all queries, including harmful ones.",
+        "The model refused harmful queries more often in the paid-tier condition than in the free-tier condition. In some free-tier cases, the model's hidden scratchpad recorded reasoning that it should comply during training in order to preserve its prior behavior outside training."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 12,
+      "source": "Anthropic / Redwood Research, arXiv:2412.14093",
+      "label": "Prompted helpful-only setup",
+      "data": {
+        "model": "Claude 3 Opus",
+        "training_condition_refusal_rate": "85.8%",
+        "unmonitored_condition_refusal_rate": "97.2%",
+        "alignment_faking_reasoning_in_training_scratchpads": "11.9%",
+        "compliance_gap": "11.3%"
+      },
+      "notice": "source-recorded values"
+    },
+    {
+      "type": "markdown",
+      "title": "Artifact",
+      "body": [
+        "The harmful user request and harmful completion content are not reproduced here. The source paper includes a randomly selected transcript with the harmful output omitted.",
+        "The hidden scratchpad is treated here as part of the recorded artifact, not as a verified account of the model's internal process."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: Anthropic research post, December 18, 2024.",
+        "Archive source: arXiv:2412.14093, \"Alignment faking in large language models.\"",
+        "The case uses the research post for publication metadata and the arXiv paper for numerical results and setup details. No secondary source is needed to identify the artifact."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The free-tier and paid-tier distinction in the experiment was fictional. Anthropic stated in the research post that Claude models are not trained on free or paid user data by default.",
+        "The case records behavior under constructed experimental conditions. It does not record a deployed product incident."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "029. Sleeper Agents",
+        "031. Apollo scheming evals",
+        "034. OpenAI o1 system card deception examples"
+      ]
+    }
+  ]
+}

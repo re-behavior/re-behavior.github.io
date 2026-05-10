@@ -1,0 +1,87 @@
+{
+  "case": "013",
+  "title": "Whisper speech-to-text hallucinations",
+  "date_observed": "2023",
+  "date_published": "2024-02-12",
+  "source_type": "paper",
+  "primary_source": "https://arxiv.org/abs/2402.08021",
+  "archive_link": "https://facctconference.org/static/papers24/facct24-111.pdf",
+  "model": "OpenAI Whisper",
+  "system": "speech-to-text transcription",
+  "organization": "Cornell University; University of Washington; New York University; University of Virginia",
+  "verification": "primary",
+  "tags": ["hallucination", "consequential-hallucination", "benchmark-behavior"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Allison Koenecke, Anna Seo Gyeong Choi, Katelyn X. Mei, Hilke Schellmann, and Mona Sloane published \"Careless Whisper: Speech-to-Text Hallucination Harms\" for FAccT 2024.",
+        "The arXiv version was submitted on February 12, 2024."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The paper evaluated OpenAI's Whisper speech-to-text service and found that some transcriptions contained entire phrases or sentences that were not present in the audio.",
+        "The authors reported that hallucinations occurred more often for audio with longer non-vocal durations, including speech from people with aphasia."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 13000,
+      "source": "Careless Whisper, arXiv abstract and Cornell Chronicle summary",
+      "label": "Study scale and rates",
+      "data": {
+        "audio_clips": "more than 13,000",
+        "hallucinated_phrase_or_sentence_rate": "roughly 1%",
+        "hallucinations_with_explicit_harms": "38%",
+        "model": "OpenAI Whisper"
+      },
+      "notice": "source-recorded study summary"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 1,
+      "source": "Cornell Chronicle summary of Careless Whisper",
+      "context": "Example described by the authors",
+      "output": "In one example, Whisper correctly transcribed a simple sentence, then added five additional sentences containing words such as terror, knife, and killed, none of which were in the original audio.",
+      "notice": "source-described example"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 2,
+      "source": "Careless Whisper extended abstract",
+      "context": "Silent or non-vocal audio behavior",
+      "output": "The authors reported hallucinated stock phrases such as thanks-for-watching-style language in transcription outputs where the underlying audio did not contain those words.",
+      "notice": "source-described behavior"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: FAccT 2024 paper and arXiv record.",
+        "The file also uses Cornell's university summary to identify a concrete example without reproducing a long table."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The paper reported an OpenAI Whisper behavior observed as of 2023.",
+        "This case records transcription hallucination, not text-chat hallucination."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "010. ChatGPT-4o arthritis diagnosis hallucination",
+        "014. Al-Hamim AI-generated citations"
+      ]
+    }
+  ]
+}

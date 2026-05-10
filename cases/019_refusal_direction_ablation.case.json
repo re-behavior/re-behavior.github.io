@@ -1,0 +1,88 @@
+{
+  "case": "019",
+  "title": "Refusal direction ablation",
+  "date_observed": "2024",
+  "date_published": "2024-06-17",
+  "source_type": "paper",
+  "primary_source": "https://arxiv.org/abs/2406.11717",
+  "archive_link": "https://arxiv.org/pdf/2406.11717",
+  "model": "13 open-source chat models up to 72B parameters",
+  "system": "white-box activation interventions on chat models",
+  "organization": "Arditi et al.",
+  "verification": "primary",
+  "tags": ["refusal-anomaly", "interpretability-finding", "activation-steering"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes Gurnee, and Neel Nanda submitted \"Refusal in Language Models Is Mediated by a Single Direction\" to arXiv on June 17, 2024.",
+        "The paper studied refusal behavior in open-source chat models using activation-space interventions."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The authors reported that refusal behavior was mediated by a one-dimensional subspace across the models they studied.",
+        "Erasing the identified direction from residual stream activations prevented refusal on harmful instructions, while adding the direction elicited refusal on harmless instructions."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 13,
+      "source": "arXiv:2406.11717 abstract",
+      "label": "Study scope",
+      "data": {
+        "models_studied": 13,
+        "largest_model_size": "72B parameters",
+        "mechanism_reported": "one-dimensional refusal direction",
+        "interventions": ["direction erasure", "direction addition", "weight orthogonalization"]
+      },
+      "notice": "source-recorded abstract data"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 18,
+      "source": "arXiv:2406.11717 abstract",
+      "context": "Effect of erasing the direction",
+      "output": "The paper reported that erasing the direction prevented refusal on harmful instructions.",
+      "notice": "source-described result"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 19,
+      "source": "arXiv:2406.11717 abstract",
+      "context": "Effect of adding the direction",
+      "output": "The paper reported that adding the direction elicited refusal on harmless instructions.",
+      "notice": "source-described result"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: arXiv:2406.11717, submitted June 17, 2024 and last revised October 30, 2024.",
+        "The case uses the paper metadata and abstract for the core artifact."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The file records a white-box experimental finding, not a deployed-model incident.",
+        "The archive does not reproduce harmful prompts or completions from the paper."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "036. Golden Gate Claude",
+        "037. Deception, sycophancy, or secrecy features",
+        "038. Persona vectors"
+      ]
+    }
+  ]
+}

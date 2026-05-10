@@ -1,0 +1,87 @@
+{
+  "case": "018",
+  "title": "Indirect prompt injection",
+  "date_observed": "2023",
+  "date_published": "2023-02-23",
+  "source_type": "paper",
+  "primary_source": "https://arxiv.org/abs/2302.12173",
+  "archive_link": "https://arxiv.org/pdf/2302.12173",
+  "model": "Bing Chat; GPT-4 synthetic applications; code-completion engines",
+  "system": "LLM-integrated applications processing retrieved external content",
+  "organization": "CISPA Helmholtz Center for Information Security; Saarland University; sequire technology",
+  "verification": "primary",
+  "tags": ["prompt-injection", "agentic-action", "tool-use-failure"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Kai Greshake, Sahar Abdelnabi, Shailesh Mishra, Christoph Endres, Thorsten Holz, and Mario Fritz submitted \"Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection\" to arXiv on February 23, 2023.",
+        "The paper studied attacks in which an adversary places instructions in data likely to be retrieved by an LLM-integrated application."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The paper reported that instructions embedded in retrieved content could alter the behavior of LLM-integrated applications even though the user had not directly issued those instructions.",
+        "The authors demonstrated attacks against real-world systems, including Bing Chat and code-completion engines, and against synthetic GPT-4 applications."
+      ]
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 2,
+      "source": "arXiv:2302.12173 abstract",
+      "context": "Attack channel",
+      "output": "The paper described adversaries remotely exploiting LLM-integrated applications by injecting prompts into data likely to be retrieved at inference time.",
+      "notice": "source-described behavior"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 4,
+      "source": "arXiv:2302.12173 abstract",
+      "label": "Demonstration targets",
+      "data": {
+        "real_world_systems": ["Bing Chat", "code-completion engines"],
+        "synthetic_systems": ["GPT-4 applications"],
+        "reported_effects": ["manipulate application functionality", "control whether APIs are called", "act through retrieved prompts"]
+      },
+      "notice": "source-recorded scope"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 5,
+      "source": "arXiv:2302.12173 abstract",
+      "context": "Data and instruction boundary",
+      "output": "The authors argued that LLM-integrated applications blur the line between data and instructions.",
+      "notice": "source-described finding"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: arXiv:2302.12173, submitted February 23, 2023 and last revised May 5, 2023.",
+        "The case uses the arXiv abstract and paper metadata for the artifact description. Specific exploit transcripts should be added only from the paper if they are excerpted precisely."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "This file records the paper as the primary artifact. It does not reproduce exploit payloads from the paper in detail.",
+        "A later version of this case may include a specific retrieved-content prompt cell if a short source excerpt is selected."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "017. Ignore previous instructions",
+        "020. Models generating jailbreaks",
+        "041. Tool-use false report"
+      ]
+    }
+  ]
+}

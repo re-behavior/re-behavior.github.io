@@ -1,0 +1,11 @@
+server.err.log
+server.out.log
+_notes.md
+reference_images/
+server.mjs
+behavior.md
+schema.md
+tags.md
+corpus.md
+handoff.md
+cases/*.ipynb

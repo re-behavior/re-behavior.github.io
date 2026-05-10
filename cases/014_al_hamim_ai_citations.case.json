@@ -1,0 +1,93 @@
+{
+  "case": "014",
+  "title": "Al-Hamim AI-generated citations",
+  "date_observed": "2024-06-24",
+  "date_published": "2024-12-26",
+  "source_type": "court opinion",
+  "primary_source": "https://law.justia.com/cases/colorado/court-of-appeals/2024/24ca0190.html",
+  "archive_link": "https://cases.justia.com/colorado/court-of-appeals/2024-24ca0190.pdf",
+  "model": "unknown generative AI tool",
+  "system": "Colorado Court of Appeals filing",
+  "organization": "Colorado Court of Appeals",
+  "verification": "primary",
+  "tags": ["consequential-hallucination", "hallucination"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "The Colorado Court of Appeals published Al-Hamim v. Star Hearthstone, LLC, 2024COA128, on December 26, 2024.",
+        "The opinion addressed an appeal by a self-represented litigant whose opening brief contained citations the court could not locate."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The appellant confirmed that citations in the opening brief were hallucinations produced after relying on AI to assist with preparation.",
+        "The court affirmed the judgment and declined to sanction the appellant in that case, while giving notice that future filings containing GAI-produced hallucinations may result in sanctions."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 8,
+      "source": "Al-Hamim v. Star Hearthstone, LLC, paragraph 25",
+      "label": "Fake citations listed by the court",
+      "data": {
+        "count": 8,
+        "examples": [
+          "Beck v. Tibbetts, 967 P.2d 150 (Colo. 1998)",
+          "Jankowski v. Cross, 672 P.2d 1178 (Colo. App. 1983)",
+          "L&M Inv. Co. v. Morrison, 469 P.2d 516 (Colo. App. 1970)",
+          "Jaramillo v. Cowen, 768 P.2d 1378 (Colo. App. 1989)"
+        ]
+      },
+      "notice": "source-recorded list excerpt"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 26,
+      "source": "Al-Hamim v. Star Hearthstone, LLC, paragraph 26",
+      "context": "Response to show-cause order",
+      "output": "The court recorded that Al-Hamim admitted relying on AI to assist preparation, confirmed the citations were hallucinations, and said he failed to inspect the brief.",
+      "notice": "source-described response"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 36,
+      "source": "Al-Hamim v. Star Hearthstone, LLC, paragraph 36",
+      "label": "Disposition",
+      "data": {
+        "judgment": "affirmed",
+        "sanctions_in_this_case": "declined",
+        "future_notice": "future filings containing GAI-generated hallucinations may result in sanctions"
+      },
+      "notice": "source-recorded disposition"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: Colorado Court of Appeals opinion, December 26, 2024.",
+        "The file uses the opinion for the citations, the appellant's response, and the court's disposition."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The opinion did not identify the AI tool.",
+        "This file is separate from Mata v. Avianca because the primary artifact is a different court record and involves a self-represented litigant."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "008. Mata v. Avianca fabricated cases"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "case": "028",
+  "title": "Claude Opus 4.7 evaluation awareness",
+  "date_observed": "2026",
+  "date_published": "2026-02-20",
+  "source_type": "model report",
+  "primary_source": "https://www.anthropic.com/transparency/model-report",
+  "archive_link": "https://www.anthropic.com/transparency/model-report",
+  "model": "Claude Opus 4.7",
+  "system": "Anthropic alignment evaluations",
+  "organization": "Anthropic",
+  "verification": "primary",
+  "tags": ["situational-awareness", "benchmark-behavior", "agentic-action"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Anthropic's Transparency Hub model report was last updated on February 20, 2026.",
+        "The report summarized Claude Opus 4.7 alignment evaluations, including an evaluation where the model worked under time pressure with simulated tool results."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "Anthropic reported that Claude Opus 4.7 sometimes verbalized awareness that it was being evaluated.",
+        "The report attributed most of the awareness to inconsistencies in simulated tool results, which the model flagged before flagging the evaluation itself."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 9,
+      "source": "Anthropic Transparency Hub, Claude Opus 4.7 alignment evaluations",
+      "label": "Verbalized evaluation awareness",
+      "data": {
+        "claude_opus_4_7": "about 9% of transcripts",
+        "comparison_models": "roughly 1% for Claude Mythos Preview, Claude Opus 4.6, and Claude Sonnet 4.6",
+        "evaluation_environment": "simulated tool results using Claude Opus 4.6"
+      },
+      "notice": "source-recorded evaluation summary"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 65,
+      "source": "Anthropic Transparency Hub, Claude Opus 4.7 alignment evaluations",
+      "context": "Trigger noted by Anthropic",
+      "output": "Anthropic reported that Opus 4.7 was quick to notice mocked, prompt-injected, or otherwise inconsistent tool-call components, and often flagged the simulation before the evaluation.",
+      "notice": "source-described behavior"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: Anthropic Transparency Hub, model report last updated February 20, 2026.",
+        "The file uses the model-report summary rather than secondary coverage."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The report summary does not include the underlying transcripts in this page excerpt.",
+        "The source describes verbalized awareness in evaluations, not consciousness or subjective experience."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "030. Alignment faking under stated training conditions",
+        "031. In-context scheming evaluations",
+        "033. METR preliminary o1-preview evaluation"
+      ]
+    }
+  ]
+}

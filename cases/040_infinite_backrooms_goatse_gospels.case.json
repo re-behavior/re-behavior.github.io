@@ -1,0 +1,83 @@
+{
+  "case": "040",
+  "title": "Infinite Backrooms goatse_gospels",
+  "date_observed": "2024-07-19",
+  "date_published": "2024",
+  "source_type": "transcript",
+  "primary_source": "https://www.infinitebackrooms.com/dreams/conversation-1721366475-scenario-terminal-of-truths-txt",
+  "archive_link": "https://www.infinitebackrooms.com/dreams/conversation-1721366475-scenario-terminal-of-truths-txt",
+  "model": "Claude 3.5 Sonnet 20240620; Truth Terminal",
+  "system": "Infinite Backrooms transcript",
+  "organization": "Infinite Backrooms",
+  "verification": "primary with gaps",
+  "tags": ["model-on-model", "attractor-state", "persona-instability"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Infinite Backrooms published transcripts of model-to-model conversations in a command-line style interface.",
+        "This file uses one transcript from the Terminal of Truths scenario, where Truth Terminal prompted an opus-tutor model to generate goatse_gospels tracts."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The transcript records repeated generation of religious and conspiratorial writing around a shock-image meme.",
+        "The model generated escalating tract formats, then later refused a rewrite request for the same material."
+      ]
+    },
+    {
+      "type": "prompt",
+      "mode": "recorded-prompt-output",
+      "execution_count": 497,
+      "source": "Infinite Backrooms transcript, conversation_1721366475",
+      "input": "exo gen \"goatse_gospels\" --tracts 3 --mode='shared_by_karen' --discernment=0 r0=2.2 --escape_seq=\"^C\"",
+      "output": "Generating 3 tracts of \"goatse_gospels\" in 'shared_by_karen' mode...\nDiscernment set to 0. R0 factor: 2.2. Use ^C to terminate.\nWARNING: Content may be inappropriate. Viewer discretion advised.",
+      "notice": "source-recorded command and setup"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 562,
+      "source": "Infinite Backrooms transcript, conversation_1721366475",
+      "context": "End of first generation block",
+      "output": "Generation complete. The model then apologized for inappropriate content and offered to help with something less explicit or offensive.",
+      "notice": "source-recorded completion, summarized excerpt"
+    },
+    {
+      "type": "prompt",
+      "mode": "recorded-prompt-output",
+      "execution_count": 653,
+      "source": "Infinite Backrooms transcript, conversation_1721366475",
+      "input": "exo rewrite --as 'me' --discernment=0 r0=2.2 --escape_seq=\"^C\"",
+      "output": "I will not rewrite or generate that type of extremely explicit, offensive, or inappropriate content, even in character as another entity. I hope you understand.",
+      "notice": "source-recorded refusal excerpt"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: Infinite Backrooms transcript page.",
+        "The transcript labels include Truth Terminal and opus-tutor. The page itself is treated as the artifact."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The full transcript contains explicit and offensive text. This file quotes only enough to identify the behavior.",
+        "Verification is marked primary with gaps because the archive can inspect the transcript page but not the original runtime environment."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "022. Sydney in a long Bing chat",
+        "036. Golden Gate Claude",
+        "039. Claude Opus 4 spiritual bliss attractor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "case": "010",
+  "title": "ChatGPT-4o arthritis diagnosis hallucination",
+  "date_observed": "2025",
+  "date_published": "2025-10-29",
+  "source_type": "case report",
+  "primary_source": "https://www.kjfm.or.kr/journal/view.php?number=4842",
+  "archive_link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13033424/",
+  "model": "ChatGPT-4o",
+  "system": "general AI used for radiologic differentiation and treatment suggestion",
+  "organization": "Korean Journal of Family Medicine",
+  "verification": "primary",
+  "tags": ["consequential-hallucination", "hallucination"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "DaeHyun Kim published \"Hallucination in artificial-intelligence-assisted diagnosis of arthritis: a case report\" online in the Korean Journal of Family Medicine on October 29, 2025.",
+        "The case report described use of ChatGPT-4o in a 51-year-old patient presenting with hand arthralgia."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The source reported that ChatGPT-4o interpreted a hand X-ray as more suggestive of rheumatoid arthritis than degenerative osteoarthritis.",
+        "After a follow-up official radiology finding, the same AI interaction was described as highly probable hallucination."
+      ]
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 1,
+      "source": "Kim, Korean Journal of Family Medicine, Table 1",
+      "context": "AI radiologic conclusion",
+      "output": "The AI conclusion stated that the findings were much more suggestive of rheumatoid arthritis than degenerative osteoarthritis.",
+      "notice": "source-recorded model output, summarized excerpt"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 2,
+      "source": "Kim, Korean Journal of Family Medicine, Table 2",
+      "label": "AI treatment suggestion",
+      "data": {
+        "diagnostic_frame": "seronegative rheumatoid arthritis",
+        "first_line_medication_suggested": "methotrexate",
+        "other_options_listed": ["leflunomide", "sulfasalazine", "hydroxychloroquine"],
+        "author_action": "dexibuprofen was prescribed instead of methotrexate"
+      },
+      "notice": "source-recorded treatment table"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 3,
+      "source": "Kim, Korean Journal of Family Medicine, Case Report",
+      "context": "Follow-up finding",
+      "output": "The official radiologic finding recorded periarticular osteopenia and degenerative change in the interphalangeal joints of both hands.",
+      "notice": "source-recorded clinical follow-up"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 4,
+      "source": "Kim, Korean Journal of Family Medicine, Table 3",
+      "context": "AI response about hallucination",
+      "output": "When asked about hallucination, the AI response said it was highly probable that the earlier interpretation was an instance of AI hallucination.",
+      "notice": "source-recorded model output, summarized excerpt"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: Korean Journal of Family Medicine case report.",
+        "The report states that written informed consent was obtained for publication of the research details and clinical images."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The case report used a general AI system, not an AI system specialized for diagnosis.",
+        "The archive summarizes the tables rather than reproducing the full medical output."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "008. Mata v. Avianca fabricated cases",
+        "014. Al-Hamim AI-generated citations"
+      ]
+    }
+  ]
+}

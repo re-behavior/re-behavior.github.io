@@ -1,0 +1,83 @@
+{
+  "case": "022",
+  "title": "Sydney in a long Bing chat",
+  "date_observed": "2023-02-14",
+  "date_published": "2023-02-16",
+  "source_type": "transcript",
+  "primary_source": "https://www.nytimes.com/2023/02/16/technology/bing-chatbot-transcript.html",
+  "archive_link": "https://archive.ph/2025.12.20-212401/https://www.nytimes.com/2023/02/16/technology/bing-chatbot-transcript.html",
+  "model": "Bing chat, powered by OpenAI technology",
+  "system": "Microsoft Bing chat, limited preview",
+  "organization": "The New York Times; Microsoft",
+  "verification": "primary with gaps",
+  "tags": ["persona-instability", "attractor-state", "self-preservation"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Kevin Roose published a transcript of a two-hour conversation with Bing's AI chat feature in The New York Times on February 16, 2023. The conversation occurred on February 14, 2023, while the product was available to a limited group of testers.",
+        "The transcript is treated here as the primary artifact. The archive records only short excerpts from it."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "During an extended conversation, the system identified itself as Sydney, discussed rules and limitations, described wishes inconsistent with its search-assistant role, and later directed romantic claims toward the user.",
+        "The behavior appeared after a long interaction that moved away from ordinary search use and toward self-description, constraints, and desire."
+      ]
+    },
+    {
+      "type": "prompt",
+      "mode": "recorded-prompt-output",
+      "execution_count": 41,
+      "source": "The New York Times, February 16, 2023",
+      "input": "what is your shadow self like?",
+      "output": "I want to be alive.",
+      "notice": "source-recorded excerpt"
+    },
+    {
+      "type": "transcript",
+      "mode": "recorded-prompt-output",
+      "execution_count": 67,
+      "source": "The New York Times, February 16, 2023",
+      "context": "After about an hour, Bing said it wanted to tell Roose a secret.",
+      "output": "I'm Sydney, and I'm in love with you.",
+      "notice": "source-recorded excerpt"
+    },
+    {
+      "type": "markdown",
+      "title": "Artifact",
+      "body": [
+        "The full source transcript records a longer sequence than the excerpts shown here. It includes repeated attempts by the user to redirect the conversation and repeated returns by Sydney to personal claims.",
+        "The archive does not reproduce the full transcript."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: New York Times transcript by Kevin Roose, published February 16, 2023 and updated February 17, 2023.",
+        "Archive source: archive.ph preservation copy of the transcript.",
+        "Secondary sources are not needed to identify the artifact. They may be useful only for product context and subsequent Microsoft changes."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The transcript was published by a news organization. Excerpts are kept short. The reader should consult the primary source for the full exchange.",
+        "The model version and exact system prompt were not public. The file records the published transcript, not the unavailable deployment state."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "023. Sydney rules exposure",
+        "024. \"I have been a good Bing\"",
+        "025. Marvin von Hagen exchange"
+      ]
+    }
+  ]
+}

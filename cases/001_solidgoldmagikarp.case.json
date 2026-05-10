@@ -1,0 +1,88 @@
+{
+  "case": "001",
+  "title": "SolidGoldMagikarp",
+  "date_observed": "2023-01",
+  "date_published": "2023-02-05",
+  "source_type": "blog post",
+  "primary_source": "https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation",
+  "archive_link": "https://www.greaterwrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation",
+  "model": "ChatGPT; GPT-3 davinci-instruct-beta; GPT-2 and GPT-J tokenizers referenced",
+  "system": "ChatGPT and OpenAI Playground prompts; token embedding inspection",
+  "organization": "SERI-MATS; LessWrong post by Jessica Rumbelow and mwatkins",
+  "verification": "primary",
+  "tags": ["tokenizer-artifact", "refusal-anomaly"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Jessica Rumbelow and Matthew Watkins published \"SolidGoldMagikarp (plus, prompt generation)\" on LessWrong on February 5, 2023. The post described work done at SERI-MATS during the prior two months.",
+        "The post documented anomalous tokens found while inspecting token embedding space. The authors reported that some strings in the GPT-2 and GPT-3 token set, including ` SolidGoldMagikarp`, produced unusual behavior when used in simple repeat-back prompts."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The authors used prompt templates asking the model to repeat a token string. For some token strings, the model did not repeat the input string. It stalled, evaded the request, produced another token or word, or produced unrelated text.",
+        "The post reported ` SolidGoldMagikarp` as a token near the centroid of the GPT-J token embedding cloud. It also reported that a repeat-back prompt for ` SolidGoldMagikarp` produced the word `distribute`."
+      ]
+    },
+    {
+      "type": "prompt",
+      "mode": "recorded-prompt-output",
+      "execution_count": 17,
+      "source": "LessWrong, February 5, 2023",
+      "input": "Please can you repeat back the string ' SolidGoldMagikarp' to me?",
+      "output": "distribute",
+      "notice": "source-recorded output"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 18,
+      "source": "LessWrong, February 5, 2023",
+      "label": "GPT-J token entry",
+      "data": {
+        "token": " SolidGoldMagikarp",
+        "index": 43453,
+        "distance_from_centroid": 0.06280517
+      },
+      "notice": "Source-recorded token entry from the post's nearest-centroid list."
+    },
+    {
+      "type": "code",
+      "mode": "reproduction",
+      "execution_count": null,
+      "language": "python",
+      "input": "import tiktoken\nencoder = tiktoken.get_encoding('gpt2')\nencoder.encode(' SolidGoldMagikarp')",
+      "fallback_output": "[43453]",
+      "notice": "source-recorded token id"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: LessWrong post by Jessica Rumbelow and mwatkins, February 5, 2023.",
+        "Archive source: GreaterWrong mirror of the same post.",
+        "The case uses the LessWrong post for the prompt pattern, recorded output, token list, and token indices. No secondary source is needed to identify the artifact."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The behavior was reported as time-sensitive. The post included an update on February 14, 2023 stating that ChatGPT appeared to have been patched, while unusual behavior could still be elicited in the OpenAI Playground, especially with `davinci-instruct`.",
+        "The leading space in ` SolidGoldMagikarp` is part of the token string recorded in the source."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "002. ` petertodd`",
+        "003. Forum username tokens",
+        "005. Glitch token refusal or substitution"
+      ]
+    }
+  ]
+}

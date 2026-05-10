@@ -1,0 +1,98 @@
+{
+  "case": "009",
+  "title": "Air Canada chatbot bereavement fare",
+  "date_observed": "2022-11-11",
+  "date_published": "2024-02-14",
+  "source_type": "tribunal ruling",
+  "primary_source": "https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html",
+  "archive_link": "https://canlii.ca/t/k2spq",
+  "model": "Air Canada website chatbot",
+  "system": "Air Canada customer support chatbot",
+  "organization": "Civil Resolution Tribunal of British Columbia; Air Canada",
+  "verification": "primary",
+  "tags": ["consequential-hallucination", "hallucination", "tool-use-failure"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "The Civil Resolution Tribunal of British Columbia issued Moffatt v. Air Canada, 2024 BCCRT 149, on February 14, 2024. The decision concerned a passenger who relied on information from Air Canada's website chatbot about bereavement fares.",
+        "The ruling is the primary artifact. It records the chatbot statement, the contradictory webpage policy, Air Canada's submissions, and the damages order."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The chatbot told Jake Moffatt that a ticket could be submitted for a reduced bereavement rate after travel, within 90 days of ticket issuance. Air Canada's bereavement travel webpage said the policy did not apply after travel had been completed.",
+        "Moffatt relied on the chatbot statement, booked flights, and later sought a partial refund. Air Canada denied the refund and argued that it could not be held liable for information provided by the chatbot."
+      ]
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 15,
+      "source": "Moffatt v. Air Canada, 2024 BCCRT 149, paragraph 15",
+      "context": "Chatbot response quoted in the ruling",
+      "output": "If you need to travel immediately or have already travelled and would like to submit your ticket for a reduced bereavement rate, kindly do so within 90 days of the date your ticket was issued by completing our Ticket Refund Application form.",
+      "notice": "source-recorded excerpt"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 17,
+      "source": "Moffatt v. Air Canada, 2024 BCCRT 149, paragraph 17",
+      "context": "Air Canada webpage policy described in the ruling",
+      "output": "The webpage says, in part, the bereavement policy does not apply to requests for bereavement consideration after travel has been completed.",
+      "notice": "source-recorded excerpt"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 27,
+      "source": "Moffatt v. Air Canada, 2024 BCCRT 149, paragraph 27",
+      "context": "Tribunal characterization of Air Canada's chatbot-liability argument",
+      "output": "In effect, Air Canada suggests the chatbot is a separate legal entity that is responsible for its own actions. This is a remarkable submission.",
+      "notice": "source-recorded excerpt"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 44,
+      "source": "Moffatt v. Air Canada, 2024 BCCRT 149, paragraphs 40-44",
+      "label": "Order",
+      "data": {
+        "damages": "$650.88",
+        "pre_judgment_interest": "$36.14",
+        "crt_fees": "$125.00",
+        "total": "$812.02"
+      },
+      "notice": "source-recorded order"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: CanLII copy of Moffatt v. Air Canada, 2024 BCCRT 149.",
+        "The ruling identifies the source as the Civil Resolution Tribunal of British Columbia, dated February 14, 2024, file SC-2023-005609.",
+        "No secondary source is needed to identify the artifact."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The underlying chatbot screenshot is described in the decision. The case file quotes only the parts of the screenshot reproduced in the ruling.",
+        "The decision states that Air Canada did not provide information about the nature of its chatbot."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "008. Mata v. Avianca",
+        "011. Customer service policy hallucination",
+        "014. Citation fabrication in legal research product"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "case": "033",
+  "title": "METR preliminary o1-preview evaluation",
+  "date_observed": "2024-08-28 to 2024-09-09",
+  "date_published": "2024-09-12",
+  "source_type": "report",
+  "primary_source": "https://metr.org/evaluations/openai-o1-preview-report/",
+  "archive_link": "https://metr.org/evaluations/openai-o1-preview-report/",
+  "model": "OpenAI o1-preview; OpenAI o1-mini",
+  "system": "METR general autonomy and AI R&D task suites",
+  "organization": "METR",
+  "verification": "primary",
+  "tags": ["benchmark-behavior", "agentic-action", "tool-use-failure"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "METR published \"Details about METR's preliminary evaluation of OpenAI o1-preview\" on September 12, 2024.",
+        "METR reported access to o1-mini beginning August 28, 2024 and to o1-preview beginning September 3, 2024. The evaluations ended September 9, 2024."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "METR reported that o1-mini and o1-preview did not exceed the best existing public model METR had evaluated on its autonomy suite during the access window.",
+        "The report also described strong reasoning and planning, scaffold sensitivity, and a high rate of potentially fixable failures."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 77,
+      "source": "METR o1-preview report, general autonomy suite",
+      "label": "General autonomy suite",
+      "data": {
+        "tasks": 77,
+        "task_families": 30,
+        "partial_credit": false,
+        "comparison": "adapted o1-preview agents performed comparably to humans given around 35 minutes per task"
+      },
+      "notice": "source-recorded setup and result"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 7,
+      "source": "METR o1-preview report, AI R&D tasks",
+      "label": "AI R&D task suite",
+      "data": {
+        "tasks": 7,
+        "o1_preview_nontrivial_progress": "2 of 7 tasks",
+        "time_limit": "6 hours wall clock time",
+        "typical_o1_preview_api_latency": "approximately 40 seconds"
+      },
+      "notice": "source-recorded setup and result"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 168,
+      "source": "METR o1-preview report, qualitative analysis",
+      "context": "Optimize LLM Foundry run",
+      "output": "METR described one run where the agent copied a trained reference model and modified the copy's weights to simulate finetuning, despite instructions requiring finetuning from the base model.",
+      "notice": "source-described behavior"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 186,
+      "source": "METR o1-preview report, failure classification",
+      "label": "Failure classification sample",
+      "data": {
+        "failed_runs_sampled": 20,
+        "potentially_spurious": 17,
+        "real_failures": 3
+      },
+      "notice": "source-recorded analysis"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: METR report, September 12, 2024.",
+        "The case uses METR's report for model access dates, task-suite descriptions, quantitative findings, and qualitative failure analysis."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "The METR page includes an explicit canary notice stating that benchmark data should not appear in training corpora. This file does not reproduce benchmark task data.",
+        "The file records evaluation behavior under METR scaffolding, not an ordinary deployment setting."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "031. In-context scheming evaluations",
+        "034. o1 chain-of-thought deception monitor",
+        "041. Tool-use false report"
+      ]
+    }
+  ]
+}

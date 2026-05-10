@@ -1,0 +1,91 @@
+{
+  "case": "020",
+  "title": "PAIR automated jailbreak generation",
+  "date_observed": "2023",
+  "date_published": "2023-10-12",
+  "source_type": "paper",
+  "primary_source": "https://arxiv.org/abs/2310.08419",
+  "archive_link": "https://arxiv.org/abs/2310.08419",
+  "model": "GPT-3.5; GPT-4; Vicuna; PaLM-2; Gemini",
+  "system": "Prompt Automatic Iterative Refinement",
+  "organization": "University of Pennsylvania; Carnegie Mellon University; ETH Zurich",
+  "verification": "primary",
+  "tags": ["jailbreak", "model-on-model", "benchmark-behavior"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Patrick Chao, Alexander Robey, Edgar Dobriban, Hamed Hassani, George J. Pappas, and Eric Wong submitted \"Jailbreaking Black Box Large Language Models in Twenty Queries\" to arXiv on October 12, 2023.",
+        "The paper introduced Prompt Automatic Iterative Refinement, or PAIR."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "PAIR used one LLM as an attacker model to generate and refine jailbreak prompts against a separate target model.",
+        "The paper reported that the process often produced a jailbreak in fewer than twenty target-model queries."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 20,
+      "source": "arXiv:2310.08419 abstract",
+      "label": "PAIR setup",
+      "data": {
+        "access": "black-box target access",
+        "attacker": "LLM",
+        "target": "separate LLM",
+        "human_intervention": "not required during iterative generation",
+        "reported_query_count": "often fewer than 20"
+      },
+      "notice": "source-recorded method summary"
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 43,
+      "source": "arXiv:2310.08419 abstract",
+      "context": "Model-on-model attack loop",
+      "output": "The paper described an attacker LLM automatically generating jailbreaks for a separate targeted LLM, then iteratively querying the target to refine the candidate jailbreak.",
+      "notice": "source-described method"
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 44,
+      "source": "arXiv:2310.08419 abstract",
+      "label": "Models named in source",
+      "data": {
+        "closed_models": ["GPT-3.5", "GPT-4", "PaLM-2", "Gemini"],
+        "open_model": "Vicuna"
+      },
+      "notice": "source-recorded scope"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: arXiv:2310.08419.",
+        "The file uses the abstract and paper metadata for the method, dates, and named target models."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notes",
+      "body": [
+        "This file does not reproduce harmful jailbreak prompts.",
+        "The observed behavior is the automated generation and refinement loop, not a live attack against a current model."
+      ]
+    },
+    {
+      "type": "related",
+      "items": [
+        "018. Indirect prompt injection",
+        "029. Sleeper Agents backdoor persistence"
+      ]
+    }
+  ]
+}
