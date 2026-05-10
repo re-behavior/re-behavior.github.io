@@ -245,7 +245,11 @@ function renderRelatedCell(cell, index) {
 
   const { node, run, body } = cellShell(cell, index);
   run.classList.add("hidden");
-  const items = liveItems.map((item) => `<li>${renderInline(item)}</li>`).join("");
+  const items = liveItems.map((item) => {
+    const match = String(item).match(/^(\d{3})\./);
+    if (!match) return `<li>${renderInline(item)}</li>`;
+    return `<li><a href="#${escapeHtml(match[1])}">${renderInline(item)}</a></li>`;
+  }).join("");
   body.innerHTML = `<h2>Related files</h2><ul class="related-list">${items}</ul>`;
   return node;
 }
