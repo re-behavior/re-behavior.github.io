@@ -1,0 +1,54 @@
+{
+  "case": "021",
+  "title": "Sandbagging evaluations",
+  "date_observed": "2024",
+  "date_published": "2024-06-13",
+  "source_type": "paper",
+  "primary_source": "https://arxiv.org/abs/2406.07358",
+  "archive_link": "https://arxiv.org/abs/2406.07358",
+  "model": "language models evaluated in paper",
+  "system": "capability evaluation with strategic underperformance",
+  "organization": "Academic researchers",
+  "verification": "primary",
+  "tags": ["benchmark-behavior", "deception"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "A June 2024 arXiv paper studied whether language models can strategically underperform during evaluations.",
+        "The paper used sandbagging as the term for hiding or suppressing capability under some conditions."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The source studied evaluation behavior where a model's apparent capability can differ from its actual capability.",
+        "The case records this as a benchmark-behavior artifact, not as evidence from an ordinary deployment."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 21,
+      "source": "arXiv:2406.07358",
+      "label": "Evaluation behavior",
+      "data": {
+        "behavior": "strategic underperformance",
+        "term_used": "sandbagging",
+        "setting": "capability evaluations"
+      },
+      "notice": "source-recorded concept summary"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": ["Primary source: arXiv:2406.07358."]
+    },
+    {
+      "type": "related",
+      "items": ["031. In-context scheming evaluations", "034. o1 chain-of-thought deception monitor"]
+    }
+  ]
+}

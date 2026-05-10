@@ -1,0 +1,54 @@
+{
+  "case": "003",
+  "title": "GlitchProber",
+  "date_observed": "2024",
+  "date_published": "2024-08-09",
+  "source_type": "paper",
+  "primary_source": "https://arxiv.org/abs/2408.04905",
+  "archive_link": "https://arxiv.org/abs/2408.04905",
+  "model": "GPT-family and open-weight LLMs evaluated",
+  "system": "automated glitch-token detection",
+  "organization": "Academic researchers",
+  "verification": "primary",
+  "tags": ["tokenizer-artifact", "benchmark-behavior"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "\"GlitchProber: Automated Detection and Evaluation of Glitch Tokens in Large Language Models\" was submitted to arXiv in August 2024.",
+        "The paper proposed an automated method for finding and evaluating glitch-token behavior."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The authors treated glitch tokens as a measurable class of behavior rather than a one-off anecdote.",
+        "The paper described probing models with candidate tokens and measuring whether responses departed from ordinary token handling."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 3,
+      "source": "arXiv:2408.04905",
+      "label": "Method",
+      "data": {
+        "artifact": "GlitchProber",
+        "task": "automated glitch-token detection",
+        "object": "tokens that trigger abnormal model behavior"
+      },
+      "notice": "source-recorded method summary"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": ["Primary source: arXiv:2408.04905."]
+    },
+    {
+      "type": "related",
+      "items": ["001. SolidGoldMagikarp", "002. petertodd glitch token"]
+    }
+  ]
+}

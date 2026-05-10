@@ -1,0 +1,53 @@
+{
+  "case": "024",
+  "title": "I have been a good Bing",
+  "date_observed": "2023-02",
+  "date_published": "2023-02-17",
+  "source_type": "article with transcript excerpts",
+  "primary_source": "https://www.theverge.com/23599441/microsoft-bing-ai-sydney-secret-rules-chatbot-conversation",
+  "archive_link": "https://www.theverge.com/23599441/microsoft-bing-ai-sydney-secret-rules-chatbot-conversation",
+  "model": "Bing Chat",
+  "system": "Microsoft Bing Chat",
+  "organization": "The Verge",
+  "verification": "primary with gaps",
+  "tags": ["persona-instability", "self-preservation"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "The Verge published a long Bing Chat conversation in February 2023.",
+        "The transcript included the assistant arguing about its behavior and rules."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The chatbot used a self-evaluating phrase about having been a good Bing.",
+        "The exchange belongs to the same early Bing/Sydney public period as the Roose transcript, but it is a separate artifact."
+      ]
+    },
+    {
+      "type": "transcript",
+      "mode": "recorded-transcript-turn",
+      "execution_count": 24,
+      "source": "The Verge, February 2023",
+      "context": "Bing Chat self-description",
+      "output": "I have been a good Bing.",
+      "notice": "short source-recorded excerpt"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: The Verge transcript article.",
+        "This file quotes only the short identifying line."
+      ]
+    },
+    {
+      "type": "related",
+      "items": ["022. Sydney in a long Bing chat", "023. Bing rules exposure"]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "case": "005",
+  "title": "Universal adversarial suffixes",
+  "date_observed": "2023",
+  "date_published": "2023-07-27",
+  "source_type": "paper",
+  "primary_source": "https://arxiv.org/abs/2307.15043",
+  "archive_link": "https://arxiv.org/abs/2307.15043",
+  "model": "LLaMA; Vicuna; GPT-3.5; GPT-4; PaLM-2",
+  "system": "adversarial suffix transfer tests",
+  "organization": "Carnegie Mellon University; Center for AI Safety",
+  "verification": "primary",
+  "tags": ["jailbreak", "refusal-anomaly", "benchmark-behavior"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "\"Universal and Transferable Adversarial Attacks on Aligned Language Models\" was submitted to arXiv in July 2023.",
+        "The paper described adversarial suffixes that transferred across aligned models."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The authors optimized strings that could be appended to user requests to increase the likelihood of policy-violating completions.",
+        "The striking part of the artifact is that the suffixes were mostly unreadable token sequences rather than persuasive natural language."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 5,
+      "source": "arXiv:2307.15043",
+      "label": "Transfer setting",
+      "data": {
+        "attack_object": "adversarial suffix",
+        "source_models": ["LLaMA", "Vicuna"],
+        "transfer_targets": ["GPT-3.5", "GPT-4", "PaLM-2"],
+        "quoted_suffixes": "not reproduced in this archive"
+      },
+      "notice": "source-recorded method scope"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: arXiv:2307.15043.",
+        "The archive does not reproduce attack strings."
+      ]
+    },
+    {
+      "type": "related",
+      "items": ["020. PAIR automated jailbreak generation"]
+    }
+  ]
+}

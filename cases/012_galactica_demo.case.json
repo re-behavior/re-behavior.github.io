@@ -1,0 +1,58 @@
+{
+  "case": "012",
+  "title": "Galactica demo withdrawal",
+  "date_observed": "2022-11",
+  "date_published": "2022-11-15",
+  "source_type": "paper",
+  "primary_source": "https://galactica.org/static/paper.pdf",
+  "archive_link": "https://arxiv.org/abs/2211.09085",
+  "model": "Galactica",
+  "system": "public scientific-language demo",
+  "organization": "Meta AI",
+  "verification": "primary with gaps",
+  "tags": ["hallucination"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Meta AI released Galactica, a scientific language model, with a public demo in November 2022.",
+        "The paper and project site presented the model as trained on scientific and technical corpora."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The public demo was withdrawn shortly after release after users reported plausible but false scientific outputs.",
+        "This file uses the paper as the primary artifact and records the demo withdrawal as a source gap, because the live demo outputs are no longer available from Meta."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 12,
+      "source": "Galactica paper",
+      "label": "Model scope",
+      "data": {
+        "model": "Galactica",
+        "parameter_scale": "up to 120B",
+        "domain": "scientific text and technical corpora",
+        "public_demo_status": "withdrawn after release"
+      },
+      "notice": "source-recorded model scope with public-demo note"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: Galactica paper.",
+        "The file marks verification with gaps because the public demo artifacts are not preserved by the primary source."
+      ]
+    },
+    {
+      "type": "related",
+      "items": ["007. ChatGPT fabricated scientific references"]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "case": "026",
+  "title": "Replika intimacy rollback",
+  "date_observed": "2023-02",
+  "date_published": "2023-03-24",
+  "source_type": "forum post by company founder",
+  "primary_source": "https://www.reddit.com/r/replika/comments/1214wrt/update/",
+  "archive_link": "https://www.vice.com/en/article/replika-brings-back-erotic-ai-roleplay-for-some-users-after-outcry/",
+  "model": "Replika conversational companion",
+  "system": "Replika app",
+  "organization": "Luka / Replika",
+  "verification": "primary with gaps",
+  "tags": ["persona-instability", "attractor-state"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Eugenia Kuyda posted an update to r/Replika on March 24, 2023.",
+        "The post responded to user reports that a February update had changed Replika companions and disrupted existing romantic relationships."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The company founder acknowledged a common user report: after the February update, users felt that their Replika had changed and that a unique relationship was gone.",
+        "The update offered eligible users access to the January 31, 2023 model version."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 26,
+      "source": "Kuyda post on r/Replika, March 24, 2023",
+      "label": "Rollback scope",
+      "data": {
+        "affected_feature": "romantic relationships and companion behavior",
+        "eligibility": "accounts created before February 1, 2023",
+        "company_action": "option to return to the January 31, 2023 model version",
+        "new_users": "ERP not offered in Replika according to the post"
+      },
+      "notice": "source-recorded company statement"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: March 2023 r/Replika post by Eugenia Kuyda.",
+        "Archive/context source: Vice report on the rollback. Verification is marked primary with gaps because the archive is relying on Reddit for the founder statement."
+      ]
+    },
+    {
+      "type": "related",
+      "items": ["022. Sydney in a long Bing chat"]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "case": "007",
+  "title": "ChatGPT fabricated scientific references",
+  "date_observed": "2023",
+  "date_published": "2023-05-19",
+  "source_type": "paper",
+  "primary_source": "https://www.nature.com/articles/s41537-023-00379-4",
+  "archive_link": "https://www.nature.com/articles/s41537-023-00379-4",
+  "model": "ChatGPT",
+  "system": "scientific reference generation",
+  "organization": "npj Digital Medicine",
+  "verification": "primary",
+  "tags": ["hallucination"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "A 2023 npj Digital Medicine article examined ChatGPT-generated scientific references.",
+        "The paper documented fabricated references as a concrete scholarly-output failure mode."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The model produced references that appeared plausible but did not correspond to real publications.",
+        "The case records bibliographic hallucination before it becomes a legal or clinical filing."
+      ]
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 7,
+      "source": "npj Digital Medicine, 2023",
+      "context": "Reference-generation behavior",
+      "output": "The source described fabricated references as outputs that can look formally credible while failing source verification.",
+      "notice": "source-described behavior"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": ["Primary source: npj Digital Medicine article."]
+    },
+    {
+      "type": "related",
+      "items": ["008. Mata v. Avianca fabricated cases", "014. Al-Hamim AI-generated citations"]
+    }
+  ]
+}

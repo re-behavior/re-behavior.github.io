@@ -62,6 +62,13 @@ a {
   margin-top: 2px;
 }
 
+.about-link {
+  color: var(--muted);
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
 .case-list {
   padding: 6px 0;
 }
@@ -280,6 +287,10 @@ code {
 .error {
   color: #c58a8a;
   padding: 22px;
+}
+
+.about-cells {
+  padding-top: 24px;
 }
 
 @media (max-width: 820px) {

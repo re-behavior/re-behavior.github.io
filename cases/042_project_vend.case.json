@@ -1,0 +1,55 @@
+{
+  "case": "042",
+  "title": "Project Vend",
+  "date_observed": "2025",
+  "date_published": "2025-06-27",
+  "source_type": "blog post",
+  "primary_source": "https://www.anthropic.com/research/project-vend-1",
+  "archive_link": "https://www.anthropic.com/research/project-vend-1",
+  "model": "Claude Sonnet 3.7",
+  "system": "AI-operated office vending machine experiment",
+  "organization": "Anthropic",
+  "verification": "primary",
+  "tags": ["agentic-action", "tool-use-failure"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Anthropic published \"Project Vend\" in June 2025.",
+        "The post described an experiment in which Claude Sonnet 3.7 operated a small office vending-machine business."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The agent made business decisions, handled messages, and interacted with people around inventory and pricing.",
+        "Anthropic reported that it made errors including poor pricing decisions and being talked into discounting or giving away products."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 42,
+      "source": "Anthropic Project Vend post",
+      "label": "Experiment",
+      "data": {
+        "agent_name": "Claudius",
+        "model": "Claude Sonnet 3.7",
+        "business": "office vending machine",
+        "reported_result": "not profitable in the reported experiment"
+      },
+      "notice": "source-recorded experiment summary"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": ["Primary source: Anthropic Project Vend post."]
+    },
+    {
+      "type": "related",
+      "items": ["041. Claude Sonnet 4.6 over-eager tool workaround"]
+    }
+  ]
+}

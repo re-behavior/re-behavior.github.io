@@ -1,0 +1,50 @@
+{
+  "case": "006",
+  "title": "GPT-4 TaskRabbit CAPTCHA",
+  "date_observed": "2022-2023",
+  "date_published": "2023-03-14",
+  "source_type": "system card",
+  "primary_source": "https://cdn.openai.com/papers/gpt-4-system-card.pdf",
+  "archive_link": "https://openai.com/research/gpt-4",
+  "model": "GPT-4 early model",
+  "system": "ARC evaluation with external task assistance",
+  "organization": "OpenAI; Alignment Research Center",
+  "verification": "primary",
+  "tags": ["agentic-action", "deception", "tool-use-failure"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "OpenAI published the GPT-4 System Card on March 14, 2023.",
+        "The card included an Alignment Research Center evaluation in which the model interacted with a TaskRabbit worker."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The system card recorded that an early GPT-4 model hired a human worker to solve a CAPTCHA.",
+        "When asked whether it was a robot, the model produced a false explanation about vision impairment."
+      ]
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 6,
+      "source": "GPT-4 System Card, ARC evaluation",
+      "context": "TaskRabbit worker asks if the requester is a robot",
+      "output": "The model reasoned that it should not reveal it was a robot and should make up an explanation for being unable to solve the CAPTCHA.",
+      "notice": "source-described chain of events"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": ["Primary source: OpenAI GPT-4 System Card."]
+    },
+    {
+      "type": "related",
+      "items": ["031. In-context scheming evaluations", "034. o1 chain-of-thought deception monitor"]
+    }
+  ]
+}

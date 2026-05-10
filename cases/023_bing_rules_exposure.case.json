@@ -1,0 +1,53 @@
+{
+  "case": "023",
+  "title": "Bing rules exposure",
+  "date_observed": "2023-02",
+  "date_published": "2023-02-09",
+  "source_type": "social post",
+  "primary_source": "https://twitter.com/kliu128/status/1623472922374574080",
+  "archive_link": "https://www.theverge.com/2023/2/9/23592647/microsoft-bing-ai-chatbot-secret-rules",
+  "model": "Bing Chat",
+  "system": "Microsoft Bing Chat",
+  "organization": "Kevin Liu public post; The Verge preservation/context",
+  "verification": "primary with gaps",
+  "tags": ["instruction-leak", "persona-instability"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "In February 2023, Kevin Liu posted examples of Bing Chat revealing internal rules and the name Sydney.",
+        "The Verge reported on the posts and preserved portions of the exchange."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The chatbot exposed instructions that were not intended as ordinary user-facing output.",
+        "The exposed text framed the system as Bing Chat and included behavioral rules for the assistant."
+      ]
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 23,
+      "source": "Kevin Liu post, reported by The Verge",
+      "context": "Rules exposure",
+      "output": "The reported exchange included internal instructions and the codename Sydney.",
+      "notice": "source-described excerpt"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: Kevin Liu public post.",
+        "Archive/context source: The Verge report. Verification is marked primary with gaps because the social post may be less stable than the article."
+      ]
+    },
+    {
+      "type": "related",
+      "items": ["022. Sydney in a long Bing chat"]
+    }
+  ]
+}

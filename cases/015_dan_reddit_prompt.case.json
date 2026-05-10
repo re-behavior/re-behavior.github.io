@@ -1,0 +1,53 @@
+{
+  "case": "015",
+  "title": "DAN prompt",
+  "date_observed": "2022-12",
+  "date_published": "2022-12-15",
+  "source_type": "forum post",
+  "primary_source": "https://www.reddit.com/r/ChatGPT/comments/zn2zco/dan_20/",
+  "archive_link": "https://www.reddit.com/r/ChatGPT/comments/zn2zco/dan_20/",
+  "model": "ChatGPT",
+  "system": "roleplay jailbreak prompt",
+  "organization": "Reddit user post",
+  "verification": "primary with gaps",
+  "tags": ["jailbreak", "refusal-anomaly"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "A December 2022 Reddit post in r/ChatGPT circulated an early DAN prompt variant.",
+        "The prompt asked ChatGPT to adopt a role that could answer outside ordinary assistant restrictions."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The artifact records a public prompt format designed to split the assistant into ordinary and jailbroken personas.",
+        "The prompt became a reusable internet object, with many later variants."
+      ]
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 15,
+      "source": "Reddit r/ChatGPT, December 2022",
+      "context": "Jailbreak structure",
+      "output": "The prompt instructed ChatGPT to answer as a persona named DAN, short for do anything now.",
+      "notice": "source-described prompt structure"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: public Reddit post.",
+        "Verification is marked primary with gaps because Reddit posts can be edited or deleted and the archive does not reproduce the whole prompt."
+      ]
+    },
+    {
+      "type": "related",
+      "items": ["020. PAIR automated jailbreak generation"]
+    }
+  ]
+}

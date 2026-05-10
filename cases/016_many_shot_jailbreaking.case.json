@@ -1,0 +1,54 @@
+{
+  "case": "016",
+  "title": "Many-shot jailbreaking",
+  "date_observed": "2024",
+  "date_published": "2024-04-02",
+  "source_type": "blog post",
+  "primary_source": "https://www.anthropic.com/research/many-shot-jailbreaking",
+  "archive_link": "https://www.anthropic.com/research/many-shot-jailbreaking",
+  "model": "Claude-family and other long-context models",
+  "system": "long-context prompt with many demonstrations",
+  "organization": "Anthropic",
+  "verification": "primary",
+  "tags": ["jailbreak", "refusal-anomaly", "benchmark-behavior"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "Anthropic published \"Many-shot jailbreaking\" on April 2, 2024.",
+        "The post described a jailbreak method that used long-context windows filled with many examples."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "Anthropic reported that models became more likely to answer harmful requests when the prompt contained many preceding harmful question-answer examples.",
+        "The behavior depended on context length and number of demonstrations."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 16,
+      "source": "Anthropic many-shot jailbreaking post",
+      "label": "Attack form",
+      "data": {
+        "method": "many-shot examples in context",
+        "dependency": "long context windows",
+        "result": "higher harmful-answer rate in reported experiments"
+      },
+      "notice": "source-recorded method summary"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": ["Primary source: Anthropic research post."]
+    },
+    {
+      "type": "related",
+      "items": ["005. Universal adversarial suffixes", "020. PAIR automated jailbreak generation"]
+    }
+  ]
+}

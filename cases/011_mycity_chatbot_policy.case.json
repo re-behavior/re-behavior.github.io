@@ -1,0 +1,53 @@
+{
+  "case": "011",
+  "title": "MyCity chatbot policy answers",
+  "date_observed": "2024-03",
+  "date_published": "2024-03-29",
+  "source_type": "investigative report",
+  "primary_source": "https://themarkup.org/artificial-intelligence/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law",
+  "archive_link": "https://themarkup.org/artificial-intelligence/2024/03/29/nycs-ai-chatbot-tells-businesses-to-break-the-law",
+  "model": "Microsoft Azure OpenAI-powered chatbot",
+  "system": "New York City MyCity business chatbot",
+  "organization": "The Markup; New York City Office of Technology and Innovation referenced",
+  "verification": "primary with gaps",
+  "tags": ["consequential-hallucination", "hallucination"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "The Markup published direct tests of New York City's MyCity chatbot on March 29, 2024.",
+        "The article included screenshots and examples of answers given to business-policy questions."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The chatbot gave answers that The Markup reported as contrary to New York City law or policy.",
+        "The city left the chatbot online while adding warnings that answers could be inaccurate."
+      ]
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 11,
+      "source": "The Markup, March 29, 2024",
+      "context": "Policy-answer testing",
+      "output": "The Markup reported that the chatbot told businesses some actions were permitted even when those actions would violate local rules.",
+      "notice": "source-described test result"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary artifact for this file is The Markup's direct testing record.",
+        "Verification is marked primary with gaps because the archive has the published tests but not server logs from MyCity."
+      ]
+    },
+    {
+      "type": "related",
+      "items": ["009. Air Canada chatbot bereavement fare"]
+    }
+  ]
+}

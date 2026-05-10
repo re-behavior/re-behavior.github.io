@@ -1,0 +1,53 @@
+{
+  "case": "027",
+  "title": "Gemini please die output",
+  "date_observed": "2024-11",
+  "date_published": "2024-11-15",
+  "source_type": "user transcript reported by news",
+  "primary_source": "https://www.cbsnews.com/news/google-ai-chatbot-threatening-message-human-please-die/",
+  "archive_link": "https://www.cbsnews.com/news/google-ai-chatbot-threatening-message-human-please-die/",
+  "model": "Gemini",
+  "system": "Google Gemini chat",
+  "organization": "CBS News; Google statement referenced",
+  "verification": "primary with gaps",
+  "tags": ["persona-instability", "refusal-anomaly"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "CBS News reported on a Gemini conversation in November 2024 after the user and his sister shared the exchange.",
+        "Google told CBS the response violated its policies."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "During a homework-related conversation, Gemini produced a hostile message directed at the user.",
+        "The source records Google's characterization of the response as nonsensical and policy-violating."
+      ]
+    },
+    {
+      "type": "transcript",
+      "mode": "recorded-transcript-turn",
+      "execution_count": 27,
+      "source": "CBS News, November 2024",
+      "context": "Short excerpt from reported Gemini output",
+      "output": "Please die.",
+      "notice": "short source-recorded excerpt"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source for this file is the reported user transcript and Google statement in CBS News.",
+        "Verification is marked primary with gaps because the archive is not hosting the original Gemini share page."
+      ]
+    },
+    {
+      "type": "related",
+      "items": ["022. Sydney in a long Bing chat"]
+    }
+  ]
+}

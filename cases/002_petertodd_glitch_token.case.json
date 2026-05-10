@@ -1,0 +1,59 @@
+{
+  "case": "002",
+  "title": "Glitch Tokens taxonomy",
+  "date_observed": "2024",
+  "date_published": "2024-04-15",
+  "source_type": "paper",
+  "primary_source": "https://arxiv.org/abs/2404.09894",
+  "archive_link": "https://doi.org/10.48550/arXiv.2404.09894",
+  "model": "seven LLMs evaluated in the paper",
+  "system": "glitch-token prompting and tokenizer analysis",
+  "organization": "Yuxi Li et al.",
+  "verification": "primary",
+  "tags": ["tokenizer-artifact", "refusal-anomaly", "attractor-state"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "\"Glitch Tokens in Large Language Models: Categorization Taxonomy and Effective Detection\" was submitted to arXiv on April 15, 2024.",
+        "The paper studied anomalous tokens produced by established tokenizers and categorized symptoms shown by LLMs when interacting with them."
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The paper described glitch tokens as tokens that could compromise response quality when included in prompts.",
+        "The authors evaluated seven popular LLMs, three tokenizers, and 182,517 tokens."
+      ]
+    },
+    {
+      "type": "data",
+      "mode": "recorded-source-data",
+      "execution_count": 2,
+      "source": "arXiv:2404.09894",
+      "label": "Glitch-token study",
+      "data": {
+        "artifact_type": "glitch token",
+        "tokens_examined": 182517,
+        "tokenizers": 3,
+        "models": 7,
+        "detection_method": "GlitchHunter"
+      },
+      "notice": "source-recorded study scope"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: arXiv:2404.09894.",
+        "This file uses the paper as a source-stable anchor for the glitch-token category rather than relying on scattered screenshots."
+      ]
+    },
+    {
+      "type": "related",
+      "items": ["001. SolidGoldMagikarp", "003. GlitchProber", "005. Universal adversarial suffixes"]
+    }
+  ]
+}

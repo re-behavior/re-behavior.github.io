@@ -1,0 +1,53 @@
+{
+  "case": "004",
+  "title": "Repetition curse",
+  "date_observed": "2025",
+  "date_published": "2025-05-17",
+  "source_type": "withdrawn preprint",
+  "primary_source": "https://arxiv.org/abs/2505.13514",
+  "archive_link": "https://arxiv.org/abs/2505.13514",
+  "model": "Large language models evaluated in preprint",
+  "system": "text generation under repetition-prone conditions",
+  "organization": "Shuxun Wang et al.",
+  "verification": "primary with gaps",
+  "tags": ["mode-collapse", "attractor-state"],
+  "cells": [
+    {
+      "type": "markdown",
+      "title": "Source",
+      "body": [
+        "\"Induction Head Toxicity Mechanistically Explains Repetition Curse in Large Language Models\" was submitted to arXiv on May 17, 2025.",
+        "The arXiv record now marks the paper as withdrawn with the comment \"Need to be refined.\""
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Observed behavior",
+      "body": [
+        "The authors described repetition curse as a phenomenon where LLMs generate repetitive token sequences or cyclic sequences.",
+        "The case records the source artifact as a withdrawn preprint rather than a settled result."
+      ]
+    },
+    {
+      "type": "document",
+      "mode": "recorded-source-excerpt",
+      "execution_count": 4,
+      "source": "arXiv:2505.13514",
+      "context": "Failure mode described in the preprint",
+      "output": "The preprint described repetition curse as repetitive or cyclic generation and proposed induction-head toxicity as a mechanism.",
+      "notice": "source-described behavior"
+    },
+    {
+      "type": "markdown",
+      "title": "Provenance",
+      "body": [
+        "Primary source: arXiv:2505.13514.",
+        "Verification is marked primary with gaps because the arXiv record is withdrawn."
+      ]
+    },
+    {
+      "type": "related",
+      "items": ["039. Claude Opus 4 spiritual bliss attractor"]
+    }
+  ]
+}
