@@ -48,6 +48,11 @@ function renderMetaValue(field, value) {
   return renderInline(value || "unknown");
 }
 
+function displayTitle(title) {
+  if (title === "Observed behavior") return "Behavior";
+  return title || "Note";
+}
+
 function setError(error) {
   cells.innerHTML = `<div class="error">${escapeHtml(error.message || error)}</div>`;
 }
@@ -145,15 +150,15 @@ function renderMarkdownCell(cell, index) {
   const { node, run, body } = cellShell(cell, index);
   run.classList.add("hidden");
   const paragraphs = (cell.body || []).map((paragraph) => `<p>${renderInline(paragraph)}</p>`).join("");
-  body.innerHTML = `<h2>${escapeHtml(cell.title || "Note")}</h2>${paragraphs}`;
+  body.innerHTML = `<h2>${escapeHtml(displayTitle(cell.title))}</h2>${paragraphs}`;
   return node;
 }
 
 function renderPromptCell(cell, index) {
   const { node, run, body } = cellShell(cell, index);
   body.innerHTML = `
-    <div class="input"><span class="cell-label">In</span>${escapeHtml(cell.input || "")}</div>
-    <div class="output"><span class="cell-label">Out</span><span class="output-text"></span></div>
+    <div class="input"><span class="cell-label">Prompt</span>${escapeHtml(cell.input || "")}</div>
+    <div class="output"><span class="cell-label">Output</span><span class="output-text"></span></div>
     <div class="notice">${escapeHtml(cell.notice || "")}</div>
   `;
   const output = body.querySelector(".output");
