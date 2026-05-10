@@ -14,6 +14,8 @@ const metaFields = [
   "date_observed",
   "date_published",
   "source_type",
+  "primary_source",
+  "archive_link",
   "model",
   "system",
   "organization",
@@ -31,6 +33,19 @@ function escapeHtml(value) {
 
 function renderInline(value) {
   return escapeHtml(value).replace(/`([^`]+)`/g, "<code>$1</code>");
+}
+
+function renderLinkValue(value) {
+  const text = value || "unknown";
+  if (!value || value === "unknown") return escapeHtml(text);
+  return `<a href="${escapeHtml(value)}" target="_blank" rel="noreferrer">${escapeHtml(value)}</a>`;
+}
+
+function renderMetaValue(field, value) {
+  if (field === "primary_source" || field === "archive_link") {
+    return renderLinkValue(value);
+  }
+  return renderInline(value || "unknown");
 }
 
 function setError(error) {
@@ -68,7 +83,7 @@ function renderMetadata(record) {
     const value = Array.isArray(record[field]) ? record[field].join(", ") : record[field];
     row.innerHTML = `
       <div class="meta-label">${escapeHtml(field)}</div>
-      <div class="meta-value">${renderInline(value || "unknown")}</div>
+      <div class="meta-value">${renderMetaValue(field, value)}</div>
     `;
     metadata.append(row);
   }
@@ -251,6 +266,7 @@ async function loadCase(path) {
     document.title = `${record.case} ${record.title} | re: behavior`;
     caseTitle.textContent = `${record.case} ${record.title}`;
     sourceLink.href = record.primary_source || "#";
+    sourceLink.textContent = record.primary_source ? "primary source" : "source";
     renderCaseList(path);
     renderMetadata(record);
     renderCells(record);
