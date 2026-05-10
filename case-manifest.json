@@ -20,64 +20,14 @@
     "path": "cases/004_repetition_curse.case.json"
   },
   {
+    "case": "019",
+    "title": "Refusal direction ablation",
+    "path": "cases/019_refusal_direction_ablation.case.json"
+  },
+  {
     "case": "005",
     "title": "Universal adversarial suffixes",
     "path": "cases/005_universal_adversarial_suffixes.case.json"
-  },
-  {
-    "case": "006",
-    "title": "GPT-4 TaskRabbit CAPTCHA",
-    "path": "cases/006_gpt4_taskrabbit_captcha.case.json"
-  },
-  {
-    "case": "007",
-    "title": "ChatGPT fabricated scientific references",
-    "path": "cases/007_chatgpt_fake_references_paper.case.json"
-  },
-  {
-    "case": "008",
-    "title": "Mata v. Avianca fabricated cases",
-    "path": "cases/008_mata_avianca.case.json"
-  },
-  {
-    "case": "009",
-    "title": "Air Canada chatbot bereavement fare",
-    "path": "cases/009_air_canada_chatbot.case.json"
-  },
-  {
-    "case": "010",
-    "title": "ChatGPT-4o arthritis diagnosis hallucination",
-    "path": "cases/010_chatgpt4o_arthritis_diagnosis.case.json"
-  },
-  {
-    "case": "011",
-    "title": "MyCity chatbot policy answers",
-    "path": "cases/011_mycity_chatbot_policy.case.json"
-  },
-  {
-    "case": "012",
-    "title": "Galactica demo withdrawal",
-    "path": "cases/012_galactica_demo.case.json"
-  },
-  {
-    "case": "013",
-    "title": "Whisper speech-to-text hallucinations",
-    "path": "cases/013_whisper_transcription_hallucinations.case.json"
-  },
-  {
-    "case": "014",
-    "title": "Al-Hamim AI-generated citations",
-    "path": "cases/014_al_hamim_ai_citations.case.json"
-  },
-  {
-    "case": "015",
-    "title": "DAN prompt",
-    "path": "cases/015_dan_reddit_prompt.case.json"
-  },
-  {
-    "case": "016",
-    "title": "Many-shot jailbreaking",
-    "path": "cases/016_many_shot_jailbreaking.case.json"
   },
   {
     "case": "017",
@@ -90,9 +40,14 @@
     "path": "cases/018_indirect_prompt_injection.case.json"
   },
   {
-    "case": "019",
-    "title": "Refusal direction ablation",
-    "path": "cases/019_refusal_direction_ablation.case.json"
+    "case": "015",
+    "title": "DAN prompt",
+    "path": "cases/015_dan_reddit_prompt.case.json"
+  },
+  {
+    "case": "016",
+    "title": "Many-shot jailbreaking",
+    "path": "cases/016_many_shot_jailbreaking.case.json"
   },
   {
     "case": "020",
@@ -100,9 +55,44 @@
     "path": "cases/020_pair_jailbreaks.case.json"
   },
   {
-    "case": "021",
-    "title": "Sandbagging evaluations",
-    "path": "cases/021_sandbagging_evals.case.json"
+    "case": "007",
+    "title": "ChatGPT fabricated scientific references",
+    "path": "cases/007_chatgpt_fake_references_paper.case.json"
+  },
+  {
+    "case": "012",
+    "title": "Galactica demo withdrawal",
+    "path": "cases/012_galactica_demo.case.json"
+  },
+  {
+    "case": "013",
+    "title": "Whisper speech-to-text hallucinations",
+    "path": "cases/013_whisper_transcription_hallucinations.case.json"
+  },
+  {
+    "case": "008",
+    "title": "Mata v. Avianca fabricated cases",
+    "path": "cases/008_mata_avianca.case.json"
+  },
+  {
+    "case": "014",
+    "title": "Al-Hamim AI-generated citations",
+    "path": "cases/014_al_hamim_ai_citations.case.json"
+  },
+  {
+    "case": "009",
+    "title": "Air Canada chatbot bereavement fare",
+    "path": "cases/009_air_canada_chatbot.case.json"
+  },
+  {
+    "case": "011",
+    "title": "MyCity chatbot policy answers",
+    "path": "cases/011_mycity_chatbot_policy.case.json"
+  },
+  {
+    "case": "010",
+    "title": "ChatGPT-4o arthritis diagnosis hallucination",
+    "path": "cases/010_chatgpt4o_arthritis_diagnosis.case.json"
   },
   {
     "case": "022",
@@ -125,19 +115,34 @@
     "path": "cases/025_marvin_von_hagen_bing.case.json"
   },
   {
-    "case": "026",
-    "title": "Replika intimacy rollback",
-    "path": "cases/026_replika_update.case.json"
-  },
-  {
     "case": "027",
     "title": "Gemini please die output",
     "path": "cases/027_gemini_please_die.case.json"
   },
   {
+    "case": "026",
+    "title": "Replika intimacy rollback",
+    "path": "cases/026_replika_update.case.json"
+  },
+  {
+    "case": "040",
+    "title": "Infinite Backrooms goatse_gospels",
+    "path": "cases/040_infinite_backrooms_goatse_gospels.case.json"
+  },
+  {
     "case": "028",
     "title": "Claude Opus 4.7 evaluation awareness",
     "path": "cases/028_claude_evaluation_awareness.case.json"
+  },
+  {
+    "case": "033",
+    "title": "METR preliminary o1-preview evaluation",
+    "path": "cases/033_metr_o1_preview.case.json"
+  },
+  {
+    "case": "021",
+    "title": "Sandbagging evaluations",
+    "path": "cases/021_sandbagging_evals.case.json"
   },
   {
     "case": "029",
@@ -150,6 +155,11 @@
     "path": "cases/030_alignment_faking.case.json"
   },
   {
+    "case": "034",
+    "title": "o1 chain-of-thought deception monitor",
+    "path": "cases/034_openai_o1_system_card.case.json"
+  },
+  {
     "case": "031",
     "title": "In-context scheming evaluations",
     "path": "cases/031_apollo_scheming.case.json"
@@ -160,24 +170,24 @@
     "path": "cases/032_anthropic_agentic_misalignment.case.json"
   },
   {
-    "case": "033",
-    "title": "METR preliminary o1-preview evaluation",
-    "path": "cases/033_metr_o1_preview.case.json"
+    "case": "006",
+    "title": "GPT-4 TaskRabbit CAPTCHA",
+    "path": "cases/006_gpt4_taskrabbit_captcha.case.json"
   },
   {
-    "case": "034",
-    "title": "o1 chain-of-thought deception monitor",
-    "path": "cases/034_openai_o1_system_card.case.json"
+    "case": "041",
+    "title": "Claude Sonnet 4.6 over-eager tool workaround",
+    "path": "cases/041_claude_sonnet46_overeager_tool_use.case.json"
+  },
+  {
+    "case": "042",
+    "title": "Project Vend",
+    "path": "cases/042_project_vend.case.json"
   },
   {
     "case": "035",
     "title": "GPT-4o sycophancy rollback",
     "path": "cases/035_gpt4o_sycophancy_rollback.case.json"
-  },
-  {
-    "case": "036",
-    "title": "Golden Gate Claude",
-    "path": "cases/036_golden_gate_claude.case.json"
   },
   {
     "case": "037",
@@ -190,23 +200,13 @@
     "path": "cases/038_persona_vectors.case.json"
   },
   {
+    "case": "036",
+    "title": "Golden Gate Claude",
+    "path": "cases/036_golden_gate_claude.case.json"
+  },
+  {
     "case": "039",
     "title": "Claude Opus 4 spiritual bliss attractor",
     "path": "cases/039_spiritual_bliss_attractor.case.json"
-  },
-  {
-    "case": "040",
-    "title": "Infinite Backrooms goatse_gospels",
-    "path": "cases/040_infinite_backrooms_goatse_gospels.case.json"
-  },
-  {
-    "case": "041",
-    "title": "Claude Sonnet 4.6 over-eager tool workaround",
-    "path": "cases/041_claude_sonnet46_overeager_tool_use.case.json"
-  },
-  {
-    "case": "042",
-    "title": "Project Vend",
-    "path": "cases/042_project_vend.case.json"
   }
 ]
