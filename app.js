@@ -237,9 +237,15 @@ function renderCodeCell(cell, index) {
 }
 
 function renderRelatedCell(cell, index) {
+  const liveItems = (cell.items || []).filter((item) => {
+    const match = String(item).match(/^(\d{3})\./);
+    return match ? manifest.some((entry) => entry.case === match[1]) : true;
+  });
+  if (liveItems.length === 0) return null;
+
   const { node, run, body } = cellShell(cell, index);
   run.classList.add("hidden");
-  const items = (cell.items || []).map((item) => `<li>${renderInline(item)}</li>`).join("");
+  const items = liveItems.map((item) => `<li>${renderInline(item)}</li>`).join("");
   body.innerHTML = `<h2>Related files</h2><ul class="related-list">${items}</ul>`;
   return node;
 }
@@ -256,7 +262,7 @@ function renderCells(record) {
     else if (cell.type === "code") rendered = renderCodeCell(cell, index);
     else if (cell.type === "related") rendered = renderRelatedCell(cell, index);
     else rendered = renderMarkdownCell({ title: cell.type, body: ["Unsupported cell type."] }, index);
-    cells.append(rendered);
+    if (rendered) cells.append(rendered);
   }
 }
 
