@@ -280,6 +280,7 @@ async function loadCase(path) {
     renderCaseList(path);
     renderMetadata(record);
     renderCells(record);
+    window.scrollTo({ top: 0 });
   } catch (error) {
     setError(error);
   }
